@@ -7,7 +7,7 @@ import { expect } from "chai";
 import { ethers } from "hardhat";
 
 describe("DeflationToken", function () {
-  it("", async function() {
+  it("faucet", async function() {
     const dt = await ethers.deployContract("DeflationToken");
     const address = await dt.getAddress();
     console.log(address);
